@@ -18,8 +18,8 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: peterjgrainger/action-create-branch@master
+      - uses: peterjgrainger/action-create-branch@3.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          branch: 'release-notes'
+          branch: 'some-other-branch'
